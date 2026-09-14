@@ -1,14 +1,15 @@
 #include <stdio.h>
 
+#define N 8
 int main()
 {
-    int n[8];
-    for (int i = 0; i < 8; i++)
+    int n[N];
+    for (int i = 0; i < N; i++)
     {
         scanf("%d", &n[i]);
     }
 
-    for (int i = 7; i >= 0; i--)
+    for (int i = N - 1; i >= 0; i--)
     {
         (i != 0) ? printf("%d,", n[i]) : printf("%d\n", n[i]);
     }
